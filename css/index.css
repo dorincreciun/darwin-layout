@@ -1,0 +1,164 @@
+@font-face {
+  font-family: Rubik;
+  src: url("../assets/fonts/Rubik-Variable.ttf");
+}
+:root {
+  --bs-border-width: 0px !important;
+}
+
+body {
+  font-family: Rubik !important;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
+.white-space-nowrap {
+  white-space: nowrap;
+}
+
+@media (max-width: 400px) {
+  .text-small {
+    font-size: 0.75rem !important;
+  }
+}
+.bg-purple {
+  background-color: #624ea0;
+}
+.bg-dark-blue {
+  background-color: #1c71b9;
+}
+.bg-pink {
+  background-color: #d54398;
+}
+.bg-red {
+  background-color: #ee4024;
+}
+.bg-orange {
+  background-color: #f47621;
+}
+.bg-yellow {
+  background-color: #fbac2a;
+}
+.bg-green {
+  background-color: #5cba48;
+}
+.bg-light-blue {
+  background-color: #10a3dd;
+}
+.bg-dark-80 {
+  background-color: #808080;
+}
+.bg-dark-40 {
+  background-color: #404040;
+}
+.bg-dark-20 {
+  background-color: #202020;
+}
+.bg-dark-10 {
+  background-color: #101010;
+}
+.bg-white {
+  background-color: #ffffff;
+}
+
+.text-purple {
+  color: #624ea0;
+}
+.text-dark-blue {
+  color: #1c71b9;
+}
+.text-pink {
+  color: #d54398;
+}
+.text-red {
+  color: #ee4024;
+}
+.text-orange {
+  color: #f47621;
+}
+.text-yellow {
+  color: #fbac2a;
+}
+.text-green {
+  color: #5cba48;
+}
+.text-light-blue {
+  color: #10a3dd;
+}
+.text-dark-80 {
+  color: #808080;
+}
+.text-dark-40 {
+  color: #404040;
+}
+.text-dark-20 {
+  color: #202020;
+}
+.text-dark-10 {
+  color: #101010;
+}
+.text-white {
+  color: #ffffff;
+}
+
+label[for=search__input] {
+  max-width: 670px;
+  box-sizing: border-box;
+}
+@media (max-width: 992px) {
+  label[for=search__input] {
+    max-width: 100%;
+  }
+}
+label[for=search__input] input {
+  outline: none;
+}
+label[for=search__input] button {
+  width: 40px;
+  height: 40px;
+}
+
+.burger__menu {
+  padding: 0;
+  width: 35px;
+  height: 25px;
+  position: relative;
+  background-color: transparent;
+  border-color: transparent;
+}
+.burger__menu::before, .burger__menu::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #808080;
+  left: 0;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+.burger__menu::before {
+  top: 0;
+}
+.burger__menu::after {
+  bottom: 0;
+}
+.burger__menu-item {
+  width: 100%;
+  height: 2px;
+  background-color: #808080;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+.burger__menu.active::before {
+  transform: translateY(10px) rotate(45deg);
+}
+.burger__menu.active::after {
+  transform: translateY(-10px) rotate(-45deg);
+}
+.burger__menu.active .burger__menu-item {
+  transform: scaleX(0);
+}
+
+/*# sourceMappingURL=index.css.map */
